@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CityCell" rowHeight="150165" id="KGk-i7-Jjw" customClass="CityCell" customModule="WeatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y9e-nS-PBa">
+                        <rect key="frame" x="0.0" y="0.0" width="372" height="130"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gav-JJ-w33">
+                                <rect key="frame" x="15" y="14.999999999999996" width="342" height="52.666666666666657"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="pdz-FC-TkX">
+                                        <rect key="frame" x="0.0" y="0.0" width="275.33333333333331" height="52.666666666666664"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="751" text="Pune" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F66-4J-A3R" userLabel="City Name Label">
+                                                <rect key="frame" x="0.0" y="0.0" width="275.33333333333331" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="mcC-WW-ztG"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfw-ch-egF" userLabel="My Location Label">
+                                                <rect key="frame" x="0.0" y="35" width="275.33333333333331" height="17.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="25°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2D-Ri-0CH" userLabel="Temperature Label">
+                                        <rect key="frame" x="280.33333333333331" y="0.0" width="61.666666666666686" height="40.666666666666664"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="GrU-8j-9g7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="TrebuchetMS-Bold" family="Trebuchet MS" pointSize="35"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Rain" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gim-mm-kIb" userLabel="Weather Label">
+                                <rect key="frame" x="14.999999999999998" y="97.666666666666671" width="31.333333333333329" height="17.333333333333329"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="H:28° L:20°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J21-yr-XPW" userLabel="High Low Temperature Label">
+                                <rect key="frame" x="282" y="97.666666666666671" width="75" height="17.333333333333329"/>
+                                <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gav-JJ-w33" firstAttribute="leading" secondItem="y9e-nS-PBa" secondAttribute="leading" constant="15" id="CL9-cH-lqZ"/>
+                            <constraint firstItem="J21-yr-XPW" firstAttribute="top" secondItem="gav-JJ-w33" secondAttribute="bottom" constant="30" id="MY4-Rd-NUc"/>
+                            <constraint firstItem="J21-yr-XPW" firstAttribute="centerY" secondItem="Gim-mm-kIb" secondAttribute="centerY" id="c80-7A-MUH"/>
+                            <constraint firstItem="Gim-mm-kIb" firstAttribute="leading" secondItem="y9e-nS-PBa" secondAttribute="leading" constant="15" id="cFL-PX-NqC"/>
+                            <constraint firstAttribute="trailing" secondItem="gav-JJ-w33" secondAttribute="trailing" constant="15" id="dZ0-1v-3KA"/>
+                            <constraint firstAttribute="bottom" secondItem="Gim-mm-kIb" secondAttribute="bottom" constant="15" id="ekn-B2-312"/>
+                            <constraint firstAttribute="trailing" secondItem="J21-yr-XPW" secondAttribute="trailing" constant="15" id="ffc-bn-aYV"/>
+                            <constraint firstAttribute="bottom" secondItem="J21-yr-XPW" secondAttribute="bottom" constant="15" id="kYE-B0-l9K"/>
+                            <constraint firstItem="gav-JJ-w33" firstAttribute="top" secondItem="y9e-nS-PBa" secondAttribute="top" constant="15" id="tzD-py-Kel"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xeZ-tN-sFG" userLabel="Space View">
+                        <rect key="frame" x="0.0" y="130" width="372" height="20"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="iQG-eO-TSm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xeZ-tN-sFG" secondAttribute="bottom" id="5P6-KU-Ut4"/>
+                    <constraint firstItem="xeZ-tN-sFG" firstAttribute="top" secondItem="y9e-nS-PBa" secondAttribute="bottom" id="Jd2-rg-ZWX"/>
+                    <constraint firstItem="y9e-nS-PBa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MFO-Gy-Tbl"/>
+                    <constraint firstItem="xeZ-tN-sFG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="QVl-Xw-lXj"/>
+                    <constraint firstAttribute="trailing" secondItem="y9e-nS-PBa" secondAttribute="trailing" id="RUV-Mf-g02"/>
+                    <constraint firstAttribute="trailing" secondItem="xeZ-tN-sFG" secondAttribute="trailing" id="ebP-hh-AFf"/>
+                    <constraint firstItem="y9e-nS-PBa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="eh4-F2-4AQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="cityNameLabel" destination="F66-4J-A3R" id="Fqs-pJ-TpY"/>
+                <outlet property="containerView" destination="y9e-nS-PBa" id="Uol-aD-Moo"/>
+                <outlet property="highLowTemperatureLabel" destination="J21-yr-XPW" id="Spl-u8-9Rh"/>
+                <outlet property="myLocationLabel" destination="Tfw-ch-egF" id="AUp-9y-fHv"/>
+                <outlet property="temperatureLabel" destination="V2D-Ri-0CH" id="xSC-S6-ojl"/>
+                <outlet property="weatherLabel" destination="Gim-mm-kIb" id="gqs-XO-M1A"/>
+            </connections>
+            <point key="canvasLocation" x="-36.641221374045799" y="41.901408450704224"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
